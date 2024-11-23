@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 
+# Tambahkan CSS untuk tata letak responsif dan penataan elemen
 st.markdown("""
     <style>
     .center-content {
@@ -9,7 +10,7 @@ st.markdown("""
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 20px 0; /* Margin atas dan bawah */
+        margin: 20px 0; /* Tambahkan margin untuk kenyamanan */
     }
     .center-content img {
         display: block;
@@ -17,7 +18,7 @@ st.markdown("""
     }
     .content-description {
         text-align: justify;
-        margin: 0 10px; /* Margin untuk deskripsi */
+        margin: 0 10px; /* Margin untuk kenyamanan membaca */
     }
     @media only screen and (max-width: 768px) {
         .center-content {
@@ -30,21 +31,24 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Fungsi untuk menampilkan halaman dengan efek bertahap
-def show_about_page():
-
-        # Membuat layout kolom 
-   with st.container():
+# Tampilan untuk logo dan judul dengan elemen Center
+with st.container():
+    # Membuat div dengan CSS untuk menata posisi gambar dan judul di tengah
     st.markdown('<div class="center-content">', unsafe_allow_html=True)
-    st.image("./src/logo_buah (2).png", width=200)
-    st.title("Freshty.id")
-    st.markdown('</div>', unsafe_allow_html=True) 
-    st.markdown("""
-                <div style="text-align: justify;">
-                <span>
-                Freshty merupakan aplikasi yang dirancang untuk membantu konsumen dan petani dalam memantau kualitas buah secara praktis melalui analisis gambar. Dengan teknologi prediksi dan klasifikasi kualitas buah berbasis gambar, Freshty bertujuan untuk meningkatkan efisiensi supply chain dan membantu dalam proses pemilihan buah yang lebih cermat. Aplikasi ini tidak hanya memberikan manfaat bagi konsumen dalam kehidupan sehari-hari tetapi juga memberikan solusi cerdas bagi petani untuk meningkatkan perencanaan distribusi.  
-                Dengan Freshty, baik konsumen maupun petani dapat lebih percaya diri dalam mengambil keputusan terkait penyimpanan, konsumsi, dan distribusi buah. Solusi ini diharapkan mampu mendukung proses supply chain yang lebih baik, mengurangi kerugian akibat buah yang cepat membusuk, dan memastikan pengalaman terbaik bagi setiap pengguna. Mari bergabung bersama kami untuk meningkatkan kualitas dan efisiensi dalam dunia buah-buahan! 🍎🍇🍌</span>
-                </div>""", unsafe_allow_html=True)
+    st.image("./src/logo_buah (2).png", width=200)  # Gambar
+    st.title("Freshty.id")  # Judul
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Deskripsi aplikasi
+st.markdown("""
+    <div class="content-description">
+        <span>
+        Freshty merupakan aplikasi yang dirancang untuk membantu konsumen dan petani dalam memantau kualitas buah secara praktis melalui analisis gambar. Dengan teknologi prediksi dan klasifikasi kualitas buah berbasis gambar, Freshty bertujuan untuk meningkatkan efisiensi supply chain dan membantu dalam proses pemilihan buah yang lebih cermat. Aplikasi ini tidak hanya memberikan manfaat bagi konsumen dalam kehidupan sehari-hari tetapi juga memberikan solusi cerdas bagi petani untuk meningkatkan perencanaan distribusi.  
+        Dengan Freshty, baik konsumen maupun petani dapat lebih percaya diri dalam mengambil keputusan terkait penyimpanan, konsumsi, dan distribusi buah. Solusi ini diharapkan mampu mendukung proses supply chain yang lebih baik, mengurangi kerugian akibat buah yang cepat membusuk, dan memastikan pengalaman terbaik bagi setiap pengguna. Mari bergabung bersama kami untuk meningkatkan kualitas dan efisiensi dalam dunia buah-buahan! 🍎🍇🍌
+        </span>
+    </div>
+""", unsafe_allow_html=True)
+
 
     st.divider()
     # Layout untuk bagian penjelasan dan gambar
