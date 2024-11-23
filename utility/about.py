@@ -31,6 +31,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+def show_about_page():
 # Tampilan untuk logo dan judul dengan elemen Center
 with st.container():
     # Membuat div dengan CSS untuk menata posisi gambar dan judul di tengah
@@ -48,7 +49,6 @@ st.markdown("""
         </span>
     </div>
 """, unsafe_allow_html=True)
-
 
     st.divider()
     # Layout untuk bagian penjelasan dan gambar
