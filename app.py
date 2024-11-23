@@ -1,14 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from utility import consumer, farmer, about
-import os
-
-# Menentukan path ke file style.css
-css_path = os.path.join(os.getcwd(), 'style.css')
-
-# Memuat file CSS
-with open(css_path) as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
   
 # Konfigurasi awal
 st.set_page_config(page_title="Freshty.id", 
