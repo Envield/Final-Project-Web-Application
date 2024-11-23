@@ -41,9 +41,6 @@ def show_about_page():
     with st.container():
     # Membuat div dengan CSS untuk menata posisi gambar dan judul di tengah
         st.markdown('<div class="center-content">', unsafe_allow_html=True)
-    
-    # Gambar dengan CSS Class untuk pengaturan tengah
-        st.markdown('<div style="text-align: center;">', unsafe_allow_html=True)
         st.image("./src/logo_buah (2).png", width=200)
         st.markdown('</div>', unsafe_allow_html=True)
     
