@@ -1,0 +1,55 @@
+/* Background Custom */
+body {
+    background-image: url('./src/BG (6).jpg'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan transparansi */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek melayang */
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efek melayang saat hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Bayangan lebih tajam */
+}
+
+/* Card Header */
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Button Styling */
+.card .btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #007acc; /* Warna lebih gelap saat hover */
+}
+
+/* Untuk teks di atas card */
+h1, h2, h3 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Padding dan margin global */
+.container {
+    padding: 30px 50px;
+    margin: auto;
+}
