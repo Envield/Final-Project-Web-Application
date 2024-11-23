@@ -11,8 +11,8 @@ def show_farmer_page():
         """
         <style>
         .card {
-        background-color: #102315;
-        border: 1px solid #102315;
+        background-color: #06061E;
+        border: 1px solid #06061E;
         border-radius: 10px;
         padding: 20px;
         margin: 10px 0;
