@@ -4,21 +4,25 @@ import os
 # CSS untuk animasi dengan delay bertahap
 css = """
 <style>
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.5s forwards;
-}
-
-.fade-in:nth-child(1) { animation-delay: 0.3s; }
-.fade-in:nth-child(2) { animation-delay: 0.6s; }
-.fade-in:nth-child(3) { animation-delay: 0.9s; }
-.fade-in:nth-child(4) { animation-delay: 1.2s; }
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0; /* Tambahkan margin atas dan bawah */
+    }
+    .content-description {
+        text-align: justify;
+        margin: 0 10px; /* Tambahkan margin untuk kenyamanan membaca */
+    }
+    @media only screen and (max-width: 768px) {
+        .center-content {
+            margin: 10px 0;
+        }
+        .content-description {
+            margin: 0 5px;
+        }
     }
 }
 </style>
@@ -30,10 +34,11 @@ st.markdown(css, unsafe_allow_html=True)
 def show_about_page():
 
         # Membuat layout kolom 
-    col_center = st.columns([2.2, 2, 1]) 
-    with col_center[1]:
-        st.image("./src/logo_buah (2).png", width=200)  
-        st.title("Freshty.id")  
+   with st.container():
+    st.markdown('<div class="center-content">', unsafe_allow_html=True)
+    st.image("./src/logo_buah (2).png", width=200)
+    st.title("Freshty.id")
+    st.markdown('</div>', unsafe_allow_html=True) 
     st.markdown("""
                 <div style="text-align: justify;">
                 <span>
