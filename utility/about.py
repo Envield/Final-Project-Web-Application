@@ -15,8 +15,12 @@ st.markdown("""
         display: block;
         margin: 0 auto; /* Pastikan gambar ada di tengah */
     }
-    .content-description {
+    .center-content h1 {
         text-align: center;
+        margin-top: 10px;
+    }
+    .content-description {
+        text-align: justify;
         margin: 0 10px; /* Margin untuk kenyamanan membaca */
     }
     @media only screen and (max-width: 768px) {
@@ -33,12 +37,18 @@ st.markdown("""
 def show_about_page():
     # Tampilan untuk logo dan judul dengan elemen Center
     with st.container():
-        # Membuat div dengan CSS untuk menata posisi gambar dan judul di tengah
+    # Membuat div dengan CSS untuk menata posisi gambar dan judul di tengah
         st.markdown('<div class="center-content">', unsafe_allow_html=True)
-        st.image("./src/logo_buah (2).png", width=200)  # Gambar
-        st.title("Freshty.id")  # Judul
-        st.markdown('</div>', unsafe_allow_html=True)
     
+    # Gambar dengan CSS Class untuk pengaturan tengah
+        st.image("./src/logo_buah (2).png", width=200)
+    
+    # Judul dengan tag h1 (sesuaikan CSS di atas)
+        st.markdown('<h1 style="text-align: center;">Freshty.id</h1>', unsafe_allow_html=True)
+    
+    # Menutup div container
+        st.markdown('</div>', unsafe_allow_html=True)
+
     # Deskripsi aplikasi
     st.markdown("""
         <div class="content-description">
