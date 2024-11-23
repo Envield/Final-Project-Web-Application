@@ -1,20 +1,23 @@
 import streamlit as st
 import os
 
-# CSS untuk animasi dengan delay bertahap
-css = """
-<style>
+st.markdown("""
+    <style>
     .center-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 20px 0; /* Tambahkan margin atas dan bawah */
+        margin: 20px 0; /* Margin atas dan bawah */
+    }
+    .center-content img {
+        display: block;
+        margin: 0 auto; /* Pastikan gambar ada di tengah */
     }
     .content-description {
         text-align: justify;
-        margin: 0 10px; /* Tambahkan margin untuk kenyamanan membaca */
+        margin: 0 10px; /* Margin untuk deskripsi */
     }
     @media only screen and (max-width: 768px) {
         .center-content {
@@ -24,11 +27,8 @@ css = """
             margin: 0 5px;
         }
     }
-}
-</style>
-"""
-
-st.markdown(css, unsafe_allow_html=True)
+    </style>
+""", unsafe_allow_html=True)
 
 # Fungsi untuk menampilkan halaman dengan efek bertahap
 def show_about_page():
