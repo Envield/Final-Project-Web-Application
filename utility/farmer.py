@@ -2,7 +2,7 @@ import streamlit as st
 from utils import predict_freshness, get_farmer_recommendations
 
 def show_farmer_page():
-    st.header("Fitur Petani")
+    st.title("Fitur Petani")
 
     st.image("./src/gif/farm3.gif", use_column_width=True)
 
