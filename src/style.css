@@ -1,14 +1,6 @@
-/* Background Custom */
-body {
-    background-image: url('./src/BG (6).jpg'); /* Ganti dengan path gambar */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 /* Card Styling */
 .card {
-    background-color: 06061E; /* Warna putih dengan transparansi */
+    background-color: rgba(6, 6, 30, 1.0); 
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek melayang */
     padding: 20px;
