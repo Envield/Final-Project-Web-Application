@@ -42,7 +42,7 @@ def show_about_page():
     
     # Gambar dengan CSS Class untuk pengaturan tengah
         st.markdown('<div style="text-align: center;">', unsafe_allow_html=True)
-        st.image("./src/logo_buah (2).png", width=200)
+        st.image("./src/logo_buah (2).png", width=200, margin-left=20px)
         st.markdown('</div>', unsafe_allow_html=True)
     
     # Judul dengan tag h1 (sesuaikan CSS di atas)
