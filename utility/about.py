@@ -41,7 +41,9 @@ def show_about_page():
         st.markdown('<div class="center-content">', unsafe_allow_html=True)
     
     # Gambar dengan CSS Class untuk pengaturan tengah
+        st.markdown('<div style="text-align: center;">', unsafe_allow_html=True)
         st.image("./src/logo_buah (2).png", width=200)
+        st.markdown('</div>', unsafe_allow_html=True)
     
     # Judul dengan tag h1 (sesuaikan CSS di atas)
         st.markdown('<h1 style="text-align: center;">Freshty.id</h1>', unsafe_allow_html=True)
