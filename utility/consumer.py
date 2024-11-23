@@ -2,7 +2,7 @@ import streamlit as st
 from utils import predict_freshness, get_consumer_recommendations
 
 def show_consumer_page():
-    st.header("Fitur Konsumen")
+    st.title("Fitur Konsumen")
 
     st.image("./src/gif/Fruit.gif", use_column_width=True)
 
