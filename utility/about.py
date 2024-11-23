@@ -13,7 +13,9 @@ st.markdown("""
     }
     .center-content img {
         display: block;
-        margin: 0 auto; /* Pastikan gambar ada di tengah */
+        margin-left: 40px; 
+        margin-right: auto; 
+        margin-bottom: 20px; 
     }
     .center-content h1 {
         text-align: center;
@@ -42,7 +44,7 @@ def show_about_page():
     
     # Gambar dengan CSS Class untuk pengaturan tengah
         st.markdown('<div style="text-align: center;">', unsafe_allow_html=True)
-        st.image("./src/logo_buah (2).png", width=200, margin-left=20px)
+        st.image("./src/logo_buah (2).png", width=200)
         st.markdown('</div>', unsafe_allow_html=True)
     
     # Judul dengan tag h1 (sesuaikan CSS di atas)
