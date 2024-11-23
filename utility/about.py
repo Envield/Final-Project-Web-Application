@@ -13,7 +13,7 @@ st.markdown("""
     }
     .center-content img {
         display: block;
-        margin-left: 40px; 
+        margin-left: 140px; 
         margin-right: 0px; 
         margin-bottom: 20px; 
     }
