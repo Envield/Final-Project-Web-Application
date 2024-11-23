@@ -9,7 +9,7 @@ st.markdown("""
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 20px 0; /* Tambahkan margin untuk kenyamanan */
+        margin: 400px 0; /* Tambahkan margin untuk kenyamanan */
     }
     .center-content img {
         display: block;
