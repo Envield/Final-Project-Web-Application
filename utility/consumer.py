@@ -10,8 +10,8 @@ def show_consumer_page():
         """
         <style>
         .card {
-        background-color: #001F3F;
-        border: 1px solid #001F3F;
+        background-color: #06061E;
+        border: 1px solid #06061E;
         border-radius: 10px;
         padding: 20px;
         margin: 10px 0;
