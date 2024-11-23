@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 # Tambahkan CSS untuk tata letak responsif dan penataan elemen
 st.markdown("""
@@ -17,7 +16,7 @@ st.markdown("""
         margin: 0 auto; /* Pastikan gambar ada di tengah */
     }
     .content-description {
-        text-align: justify;
+        text-align: center;
         margin: 0 10px; /* Margin untuk kenyamanan membaca */
     }
     @media only screen and (max-width: 768px) {
