@@ -80,7 +80,7 @@ def get_consumer_recommendations(freshness, fruit_type):
     if "Apple" in fruit_type or "Banana" in fruit_type:
         storage_recommendation = "Lemari es"
     elif "Mango" in fruit_type or "Orange" in fruit_type:
-        storage_recommendation = "Ruang pendingin"
+        storage_recommendation = "Ruangan dengan suhu dingin"
     elif "Strawberry" in fruit_type:
         storage_recommendation = "Kulkas dengan suhu rendah"
     else:
