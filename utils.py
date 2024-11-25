@@ -62,7 +62,7 @@ def get_consumer_recommendations(freshness, fruit_type):
     elif freshness >= 20:
         consumption_time = "2-4 jam"
     else:
-        consumption_time = "Tidak Layak Konsumsi"
+        consumption_time = "Tidak Layak"
 
     # Prediksi Waktu penyimpanan hingga busuk
     if freshness >= 80:
@@ -74,7 +74,7 @@ def get_consumer_recommendations(freshness, fruit_type):
     elif freshness >= 20:
         storage_time = "6-12 jam"
     else:
-        storage_time = "Tidak Layak Simpan"
+        storage_time = "Tidak Layak"
 
     # Rekomendasi tempat penyimpanan berdasarkan jenis dan freshness
     if "Apple" in fruit_type or "Banana" in fruit_type:
@@ -100,7 +100,7 @@ def get_farmer_recommendations(freshness, fruit_type):
     elif freshness >= 20:
         distribution_time = "4-6 jam"
     else:
-        distribution_time = "Tidak Layak distribusi"
+        distribution_time = "Tidak Layak"
 
     # Rekomendasi tempat & suhu penyimpanan selama pengiriman
     if "Apple" in fruit_type or "Banana" in fruit_type:
@@ -122,6 +122,6 @@ def get_farmer_recommendations(freshness, fruit_type):
     elif freshness >= 20:
         max_delivery_time = "2 hari"
     else:
-        max_delivery_time = "Tidak Layak untuk dikirim"
+        max_delivery_time = "Tidak Layak"
 
     return distribution_time, storage_suggestion, max_delivery_time
