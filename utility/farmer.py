@@ -100,12 +100,12 @@ def show_farmer_page():
                         <div class="card">
                             <h5>Jenis Buah: {fruit_type}</h5>
                             <p><strong>Tingkat Kesegaran:</strong> {freshness:.2f}%</p>
-                            <h6>Prediksi Distribusi</h6>
+                            <h6>Prediksi Distribusi (Tanpa Penyimpanan Proper)</h6>
                             <p>Buah disarankan didistribusikan dalam waktu: <strong>{distribution_time}</strong></p>
                             <h6>Durasi Maksimum Pengiriman</h6>
-                            <p>Buah dapat bertahan hingga: <strong>{max_delivery_time}</strong> hari dalam pengiriman</p>
+                            <p>Buah dapat bertahan hingga: <strong>{storage_suggestion}</strong> hari dalam pengiriman</p>
                             <h6>Rekomendasi Penyimpanan Selama Pengiriman</h6>
-                            <p>{storage_suggestion}</p>
+                            <p>{max_delivery_time}</p>
                         </div>
                         """,
                         unsafe_allow_html=True
