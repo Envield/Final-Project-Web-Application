@@ -103,7 +103,7 @@ def show_farmer_page():
                             <h6>Prediksi Distribusi (Tanpa Penyimpanan Proper)</h6>
                             <p>Buah disarankan didistribusikan dalam waktu: <strong>{distribution_time}</strong></p>
                             <h6>Durasi Maksimum Pengiriman</h6>
-                            <p>Buah dapat bertahan hingga: <strong>{storage_suggestion}</strong> hari dalam pengiriman</p>
+                            <p>Buah dapat bertahan hingga: <strong>{storage_suggestion}</strong> dalam pengiriman</p>
                             <h6>Rekomendasi Penyimpanan Selama Pengiriman</h6>
                             <p>{max_delivery_time}</p>
                         </div>
